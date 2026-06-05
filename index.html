@@ -4,55 +4,216 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Morse Code Translator - Free Online Tool</title>
-    <meta name="description" content="Free Morse Code Translator. 
-    Convert text to morse code and morse code to text online instantly.">
-    <meta name="keywords" content="morse code translator, morse code converter, 
-    text to morse code, morse code decoder, online morse code">
+    <meta name="description" content="Free Morse Code Translator. Convert text to morse code online instantly.">
+    <meta name="keywords" content="morse code translator, morse code converter, text to morse code, morse code decoder">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: Arial, sans-serif; background: #0a0a0a; color: #fff; }
+        
+        header {
+            background: linear-gradient(135deg, #1a1a2e, #16213e);
+            padding: 20px;
+            text-align: center;
+            border-bottom: 2px solid #00d4ff;
+        }
+        header h1 { color: #00d4ff; font-size: 2em; }
+        header p { color: #aaa; margin-top: 8px; }
+
+        nav {
+            background: #111;
+            padding: 12px;
+            text-align: center;
+        }
+        nav a {
+            color: #00d4ff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 0.95em;
+        }
+        nav a:hover { color: #fff; }
+
+        .hero {
+            background: linear-gradient(135deg, #16213e, #0f3460);
+            text-align: center;
+            padding: 60px 20px;
+        }
+        .hero h2 { font-size: 2.2em; color: #00d4ff; margin-bottom: 15px; }
+        .hero p { font-size: 1.1em; color: #ccc; margin-bottom: 30px; }
+        .btn {
+            background: #00d4ff;
+            color: #000;
+            padding: 14px 35px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1em;
+            display: inline-block;
+        }
+        .btn:hover { background: #fff; }
+
+        .features {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 50px 20px;
+            background: #111;
+        }
+        .card {
+            background: #1a1a2e;
+            border: 1px solid #00d4ff33;
+            border-radius: 12px;
+            padding: 25px;
+            width: 220px;
+            text-align: center;
+        }
+        .card .icon { font-size: 2em; margin-bottom: 10px; }
+        .card h3 { color: #00d4ff; margin-bottom: 8px; }
+        .card p { color: #aaa; font-size: 0.9em; }
+
+        .morse-table {
+            background: #0a0a0a;
+            padding: 50px 20px;
+            text-align: center;
+        }
+        .morse-table h2 { color: #00d4ff; margin-bottom: 30px; font-size: 1.8em; }
+        table {
+            margin: auto;
+            border-collapse: collapse;
+            width: 90%;
+            max-width: 700px;
+        }
+        th {
+            background: #00d4ff;
+            color: #000;
+            padding: 12px;
+        }
+        td {
+            padding: 10px;
+            border: 1px solid #333;
+            color: #ccc;
+            text-align: center;
+        }
+        tr:hover { background: #1a1a2e; }
+
+        .links-section {
+            background: #111;
+            padding: 50px 20px;
+            text-align: center;
+        }
+        .links-section h2 { color: #00d4ff; margin-bottom: 30px; font-size: 1.8em; }
+        .links-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+        }
+        .link-card {
+            background: #1a1a2e;
+            border: 1px solid #00d4ff44;
+            border-radius: 10px;
+            padding: 15px 25px;
+            text-decoration: none;
+            color: #00d4ff;
+            font-weight: bold;
+            transition: all 0.3s;
+        }
+        .link-card:hover { background: #00d4ff; color: #000; }
+
+        footer {
+            background: #000;
+            text-align: center;
+            padding: 30px;
+            color: #555;
+            border-top: 1px solid #222;
+        }
+        footer a { color: #00d4ff; text-decoration: none; }
+    </style>
 </head>
 <body>
 
-<h1>Morse Code Translator - Free Online Tool</h1>
+<header>
+    <h1>📡 Morse Code Translator</h1>
+    <p>Convert Text to Morse Code & Morse Code to Text — Instantly & Free!</p>
+</header>
 
-<p>The best free <a href="https://morse-codetranslator.net">
-Morse Code Translator</a> online. Convert text to morse code 
-and morse code to text instantly!</p>
+<nav>
+    <a href="https://morse-codetranslator.net">🌐 Main Tool</a>
+    <a href="https://morsecodetranslators.github.io/Morse-Code-Translator/">📂 GitHub Page</a>
+    <a href="https://morse-code-translator-morsecodetranslators-projects.vercel.app">⚡ Vercel Mirror</a>
+</nav>
 
-<h2>Features of Our Morse Code Translator</h2>
-<ul>
-  <li>Text to Morse Code conversion</li>
-  <li>Morse Code to Text decoding</li>
-  <li>Audio playback support</li>
-  <li>Mobile friendly interface</li>
-  <li>100% Free to use - No signup required</li>
-</ul>
+<section class="hero">
+    <h2>Best Free Morse Code Translator Online</h2>
+    <p>Instantly convert any text to Morse code or decode Morse code to text.<br>
+    No signup required. 100% Free. Works on all devices!</p>
+    <a href="https://morse-codetranslator.net" class="btn">🚀 Use Free Tool Now</a>
+</section>
 
-<h2>What is Morse Code?</h2>
-<p>Morse code is a telecommunication method that encodes text 
-characters as standardized sequences of dots (.) and dashes (-). 
-Originally developed for telegraph communication.</p>
+<section class="features">
+    <div class="card">
+        <div class="icon">⚡</div>
+        <h3>Instant Convert</h3>
+        <p>Real-time text to Morse conversion as you type</p>
+    </div>
+    <div class="card">
+        <div class="icon">🔊</div>
+        <h3>Audio Playback</h3>
+        <p>Listen to your Morse code with audio support</p>
+    </div>
+    <div class="card">
+        <div class="icon">📱</div>
+        <h3>Mobile Friendly</h3>
+        <p>Works perfectly on all devices and screens</p>
+    </div>
+    <div class="card">
+        <div class="icon">🆓</div>
+        <h3>100% Free</h3>
+        <p>No signup, no payment, no limits</p>
+    </div>
+    <div class="card">
+        <div class="icon">🔄</div>
+        <h3>Two Way</h3>
+        <p>Text to Morse AND Morse to Text both supported</p>
+    </div>
+</section>
 
-<h2>Morse Code Examples</h2>
-<p>SOS = ... --- ...</p>
-<p>HELLO = .... . .-.. .-.. ---</p>
-<p>MORSE = -- --- .-. ... .</p>
+<section class="morse-table">
+    <h2>📋 Morse Code Reference Chart</h2>
+    <table>
+        <tr><th>Letter</th><th>Morse Code</th><th>Letter</th><th>Morse Code</th></tr>
+        <tr><td>A</td><td>.-</td><td>N</td><td>-.</td></tr>
+        <tr><td>B</td><td>-...</td><td>O</td><td>---</td></tr>
+        <tr><td>C</td><td>-.-.</td><td>P</td><td>.--.</td></tr>
+        <tr><td>D</td><td>-..</td><td>Q</td><td>--.-</td></tr>
+        <tr><td>E</td><td>.</td><td>R</td><td>.-.</td></tr>
+        <tr><td>F</td><td>..-.</td><td>S</td><td>...</td></tr>
+        <tr><td>G</td><td>--.</td><td>T</td><td>-</td></tr>
+        <tr><td>H</td><td>....</td><td>U</td><td>..-</td></tr>
+        <tr><td>I</td><td>..</td><td>V</td><td>...-</td></tr>
+        <tr><td>J</td><td>.---</td><td>W</td><td>.--</td></tr>
+        <tr><td>K</td><td>-.-</td><td>X</td><td>-..-</td></tr>
+        <tr><td>L</td><td>.-..</td><td>Y</td><td>-.--</td></tr>
+        <tr><td>M</td><td>--</td><td>Z</td><td>--..</td></tr>
+    </table>
+</section>
 
-<h2>How to Use Our Translator</h2>
-<p>Simply visit <a href="https://morse-codetranslator.net">
-morse-codetranslator.net</a> and:</p>
-<ol>
-  <li>Type your text in the input box</li>
-  <li>Click translate button</li>
-  <li>Get instant morse code output</li>
-  <li>Listen to audio if needed</li>
-</ol>
+<section class="links-section">
+    <h2>🔗 Our Pages & Mirrors</h2>
+    <div class="links-grid">
+        <a href="https://morse-codetranslator.net" class="link-card">🌐 Main Website</a>
+        <a href="https://morsecodetranslators.github.io/Morse-Code-Translator/" class="link-card">📂 GitHub Pages</a>
+        <a href="https://morse-code-translator-morsecodetranslators-projects.vercel.app" class="link-card">⚡ Vercel</a>
+    </div>
+</section>
 
-<h2>Why Choose Our Tool?</h2>
-<p>Our <a href="https://morse-codetranslator.net">
-free morse code translator</a> is the fastest and most 
-accurate online tool available. No downloads required!</p>
-
-<p>Visit now: <a href="https://morse-codetranslator.net">
-https://morse-codetranslator.net</a></p>
+<footer>
+    <p>© 2025 <a href="https://morse-codetranslator.net">Morse Code Translator</a> — 
+    Free Online Tool | 
+    <a href="https://morsecodetranslators.github.io/Morse-Code-Translator/">GitHub</a> | 
+    <a href="https://morse-code-translator-morsecodetranslators-projects.vercel.app">Vercel</a>
+    </p>
+</footer>
 
 </body>
 </html>
